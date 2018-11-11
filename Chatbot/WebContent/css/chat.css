@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "ZurichBT-Roman";
+    src: url(../font/Zurich BT Roman.ttf);
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: url(../font/Pacifico.ttf);
+}
+
+
+html {
+	font-family: "ZurichBT-Roman", sans-serif;
+}
+
+.chatbot {
+	position: absolute;
+	bottom: 0px;
+	right: 50px;
+	box-shadow: 0 2px 4px 0 #ccc,0 2px 10px 0 #ccc;
+}
+
+.header {
+	font-family: "Pacifico", sans-serif;
+	background: #97291e;
+	height: 44px;
+	width: 400px;
+	color: white;
+	text-align: center;
+	border: #97291e 1px solid;
+	font-size: 20px;
+}
+
+.body {
+	height: 600px;
+	width: 400px;
+	overflow-y: auto;
+	background: #f9f9f9;
+	border-bottom: none;
+}
+
+.footer {
+	padding: 0px;
+	height: 44px;
+	width: 400px;
+	border-top: none;
+}
+
+.text-box {
+	height: 41px;
+	margin-left: 10px;
+    width: 330px;
+	border: none;
+	border-color: transparent;
+	outline: none;
+	font-size: 18px;
+}
+
+.send-button {
+	width: 25%;
+	height: 50px;
+}
+
+.bot-chat, .human-chat {
+	
+	margin: 10px 0px 10px 0px;
+	clear: both;
+	padding: 10px;
+}
+.human-chat  {
+	float: right;
+}
+
+.bot-chat p, .human-chat p {
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.close {
+	color: white;
+	float: right;
+	font-size: 40px;
+	cursor: default;
+}
+
+.human {
+	float: left;
+	border-radius: 10px 0px 10px 10px;
+	background: #c3c3c3;
+	box-shadow: 1px 2px 3px #ccc;
+	padding: 10px;
+	margin-right: 5px;
+	max-width: 70%;
+}
+
+.bot {
+	float: left;
+	border-radius: 0px 10px 10px 10px;
+	background: white;
+	box-shadow: 1px 2px 3px #ccc;
+	padding: 10px;
+	margin-left: 5px;
+	max-width: 70%;
+}
+
+.send-message {
+	color: grey;
+	font-size: 40px;
+    float: right;
+    margin-right: 10px;
+}
+
+.chatbot-image {
+	background-image: url(../image/chatbot.png);
+	width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-size: cover;
+    display: inline-block;
+    float: left;
+}
+
+.human-image {
+	background-image: url(../image/human.png);
+	width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-size: cover;
+    display: inline-block;
+    float: right;
+}
+
+.loading {
+	background-image: url(../image/loading.gif);
+	background-size: contain;
+	background-color: transparent;
+	box-shadow: none;
+	height: 25px;
+    width: 25px;
+}
